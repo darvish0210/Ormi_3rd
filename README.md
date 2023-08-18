@@ -21,6 +21,7 @@ act3 : 회원가입 양식 페이지 만들어 보기
 230818
 html 기본 강의
 - 양식(form) : select , option , fieldset, textarea
+
 css 기본 강의
 - css의 정의 : cascade style sheet
 - css 적용방법, 상속
