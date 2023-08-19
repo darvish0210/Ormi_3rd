@@ -15,8 +15,10 @@ html 기본 강의
 연습문제
 act1 : 게시판 글조회 페이지 만들어 보기
 - footer, ul, ol 태그 사용
+
 act2 : 로그인 페이지 만들어 보기
 - form, label, input 태그 사용
+
 act3 : 회원가입 양식 페이지 만들어 보기
 - fieldset, radio, checkbox 태그 사용
 
