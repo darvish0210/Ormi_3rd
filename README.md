@@ -40,6 +40,7 @@ css 기본 강의
 
 act4 : 게시판 글목록 페이지 만들어보기
 - table, tr, th, td 태그 사용
+
 CSS 선택자 관련 문제풀이
 - 외부 웹사이트(CSS DINER https://flukeout.github.io/) , CSS SPEEDRUN (https://css-speedrun.netlify.app/)
 
@@ -49,3 +50,32 @@ CSS 선택자 관련 문제풀이
 act5: 주말과제 - 로그인 페이지 (act2) 에 CSS입히기 
 - margin과 padding 등의 수치를 바꿔가며 가운데로 위치시키려 했지만, 창 크기를 바꾸면 위치가 바뀌어 의미가 없었다.
 - 가운데 정렬은 가장 큰 tag에서 'margin:auto'로 하는 편이 가장 편하고 세부적인 위치 조정은 각각 tag에서 조정 해주는 것이 최고다.
+
+
+230821
+
+css 기본 강의
+- float: block 요소가 아닌 것에 float를 주면 block이 된다. 해제는 clear로.
+- flex : 'display:flex' 로 시작한다. 컨테이너에 선언하고 안에 내부의 item들의 배치를 조정하는 방식.
+
+flex 관련 문제풀이
+- 외부 웹사이트 (flexbox-froggy https://flexboxfroggy.com/#ko)
+
+act5 주말과제 해설
+- 내 코드와 다른점은 ? : 대부분의 태그에 class선언하고, 이를 css로 편집하는 방식. 코드의 재사용과 쉬운 편집을 위함?
+- 중복된 선언은 최대한 묶어서 선언.
+
+act6 회원가입 페이지(act3)에 css 입히기 : 시간초과
+
+ 왜 시간초과했는가? 
+
+--1)fieldset에 flex가 먹히지 않아서 헤멨다. -> fieldset 태그를 빼버리고 section으로 전환 후 flex 먹이기 시도
+
+--2) ul에 flex를 먹이니 까만점?이 남아있었다. -> 이를 없애기 위해 ul과 li 태그도 빼버리고 flex 먹이기 시도
+
+---1) 이런 경우엔 flaot를 쓰거나, fieldset 태그를 바꿔야 하는 것이 맞다
+
+---2) list-style: none;을 입히면 까만점이 사라진다. 의외로 간단.
+
+생각보단 사소한 곳에서 시간을 잡아먹어 고민하느라 오래걸렸다.
+
