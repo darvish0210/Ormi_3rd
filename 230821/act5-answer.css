@@ -1,0 +1,55 @@
+/* init reset ----------------*/
+body,h1,h2,h3,p
+{
+    margin 0;
+    padding: 0;
+}
+
+/* main */
+/* login page */
+.login{
+    width: 400px;
+    
+    margin: auto;
+
+}
+
+.main-title{
+    text-align: center;
+    font-size: 24px;
+}
+.main-desc{
+    text-align: center;
+    color:#767676;
+    margin: 10px 0 32px;
+}
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+
+/* 컨테이너2 */
+.main-form .flex-input{
+    display: flex;
+    align-items: center;
+}
+/* 컨테이너2 아이템 */
+.main-form div input{
+    height: 28px;
+    flex-grow: 1;
+}
+.main-form div label{
+    width: 80px;
+    
+}
+.login-btn{
+    background-color: royalblue;
+    border: 0;
+    border-radius: 4px;
+    height: 36px;
+
+    color: white;
+    font-weight: bold;
+}
