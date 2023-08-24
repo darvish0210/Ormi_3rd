@@ -130,3 +130,79 @@ and(&&) or(||) not(!)과 관련됨.
 5.null : 값이 '없음'을 나타냄
 
 undefined와 null의 차이는? 값의 '초기화'만을 목적으로 한다면 비슷할 수 있으나 undefined는 '아직 할당되지 않음' 에 더 가까움. 기본적으로 초기화는 null이 더 적당하다.
+
+
+
+
+230824
+
+JavaScript 기초 강의 
+
+함수는 fuction으로 선언하며, parameter(매개변수)를 받아 내부의 기능을 수행 후, return(반환값)을 반환해준다.
+간단하게는 화살표 선언이나, 즉시실행식으로도 만들 수 있다.
+
+화살표 선언 스타일 (==람다식)    
+
+let fun1 = (x,y)=>x+y;
+
+즉시실행함수 
+
+function(x,y){return x+y})(1,7)
+
+객체타입
+
+1. 배열 Array
+JS에선 빈 배열 선언도 가능. 배열 요소를 수정하는 것도 가능.
+존재하지 않는 원소에도 접근가능(undefined로 뜨며 에러가 아니다!)
+
+다만 sort()는 기본적으로 조금 이상하다. 숫자정렬이 str화 시킨 후, 유니코드 포인트 순으로 정렬되기 때문.
+
+push(a) : 배열 끝에 a 추가후 길이 return
+pop() : 마지막 요소 꺼낸 후 그 요소 return
+shift() : 첫번째 요소를 꺼낸 후 그 요소 return
+unshift(a) : 맨 앞에 a를 넣은 후 길이 return
+splice(a,b,c) : a번 index에서 부터 b만큼 삭제 후 c 추가
+
+예시
+const arr = [1,4,2,3,1,6]
+arr.splice(2, 2, 5, 2, 4); //2번 index (2)부터 2개 지우고(2,3 삭제), 5 2 4 추가 
+console.log(arr); // [1, 4, 5, 2, 4, 1, 6]
+
+
+slice(a,b) : a번째 index부터 추출 시작하여 b번째 index에서 추출 하고 새로운 배열로 return (생략시 배열 끝까지 추출)
+
+foreach(f) : arr의 각 요소에 함수f 실행
+map(f) : arr의 각 요소에 함수f 실행 후 결과 return
+
+foreach와 map의 차이는 ? -> map은 결과로 나온 배열을 return 해준다!
+
+filter(x) : x를 만족하는 요소만 추출해서 새 배열을 return
+
+reduce() : arr의 각 요소에 f를 실행하고, 그 결과가 누적된 하나의 값을 return
+
+예시
+const arrrr = [1,2,3,4,5]
+function reducer(x,y){
+    return (x+y)
+}
+const resulttt = arrrr.reduce(reducer);
+console.log(resulttt) // 총합구하기
+
+
+includes(x) : x가 포함되면 true, 아니면 false
+join(s) : 각 요소를 's' 로 연결 시켜주는 용 
+
+
+객체에게는 기본적으로 key와 value가 있으며, 
+이는 keys() 와 values()로 뽑아볼 수 있다.
+
+```jsx
+const babaYaga = {
+  name: "John Wick",
+  age: 53,
+  from: "벨라루스",
+	askingHim: function(){
+		console.log("Yeah, I'm thinking I'm back!");
+	}
+};
+```
