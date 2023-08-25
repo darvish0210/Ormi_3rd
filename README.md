@@ -206,3 +206,66 @@ const babaYaga = {
 	}
 };
 ```
+
+230825
+
+조건문 (if-else, switch)
+
+삼항 연산자 : if-else를 간단하게 표현하는 방식
+```jsx
+let x = true ? console.log('참') : console.log('거짓');
+console.log(x);
+```
+
+반복문 (for,while,do-while)
+
+label : 특정 코드블록에 이름을 지정하여 블록 안에서 break나 continue의 대상으로 쓸 수 있다.
+```jsx
+outer: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    if (i + j === 3) {
+      break outer;
+    }
+    console.log(i, j);
+  }
+}
+```
+
+
+
+전개구문
+
+
+```jsx
+const 과일들 = ['사과', '파인애플', '수박'];
+const 생선들 = ['조기', '갈치', '다금바리'];
+const 합치면 = [...과일들, ...생선들];
+
+console.log(합치면); 
+```
+...으로 합치기 가능
+
+
+구조 분해(디스트럭쳐링)
+
+```jsx
+let {one, two, three, four} = {one: 1,three:2,two:3}
+
+console.log(one); //1
+console.log(two); //3
+console.log(three); //2
+console.log(four); //undefined
+```
+
+갯수가 맞지 않아도, 순서가 틀려도 에러가 안난다!
+즉, 각각 할당해줘야 할 것을 편하게 쓰는 방법
+
+
+JSON(JavaScript Object Notation)
+xml: 마크업 랭귀지
+
+DOM - 문서 객체 모델
+
+DOM 은 HTML 문서의 내용을 트리형태로 구조화하여 웹페이지와 프로그래밍 언어를 연결시켜주는 역할
+
+실제로 document.head, document.body, document.body.childNodes 등으로 확인해 볼 수 있다.
