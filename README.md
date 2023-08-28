@@ -269,3 +269,51 @@ DOM - 문서 객체 모델
 DOM 은 HTML 문서의 내용을 트리형태로 구조화하여 웹페이지와 프로그래밍 언어를 연결시켜주는 역할
 
 실제로 document.head, document.body, document.body.childNodes 등으로 확인해 볼 수 있다.
+
+
+
+230828
+
+회고 시간 + JS 마지막시간
+
+promise - '콜백지옥' 을 탈출하는데 도와준다.
+```jsx
+let p = new Promise(function(resolve, reject) {
+  // 실행코드 
+});
+
+// resolve(value) — 작업이 성공적으로 마무리되면 호출, 결과는 value에 담김
+// reject(error) — 작업이 실패시 호출, error는 error에 담김
+```
+
+
+```jsx
+async function f() {
+  return '완료';
+}
+
+console.log(f);
+console.log(f().then(alert));
+
+// 완료가 된 다음 실행해보세요.
+
+f()
+```
+async는 함수의 앞에 붙이며, promise를 반환한다.
+이 async 함수 안에서 쓸 수 있는것이 await인데, 이를 쓰면 promise가 끝날때 까지 기다리게 할 수 있다.
+
+```jsx
+async function f() {
+
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("완료!"), 1000)
+  });
+
+  let result = await promise; // 프라미스가 이행될 때까지 기다림 (*)
+
+  alert(result); // "완료!"
+}
+
+f();
+
+```
