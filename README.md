@@ -325,3 +325,17 @@ f();
 - 요구사항: 기본적으로 챗봇의 형태로, 질문 제출과 답변 출력이 나와야 함
 
 - 1일차 : 프로젝트 개요 설명 + 예시 코드 확인. 주제는 고민좀 해야할듯
+
+
+
+230901 
+
+기술특강 딥러닝 with 이스트소프트 권택순 CTO님
+
+딥러닝은 어떤 방식인가? -> 점점 맞춰나가며 '가중치' 를 두어 fitting 해나가는 과정의 반복!
+
+최근엔 어떻게 쓰이고 있는가? -> ChatGPT, 음성인식(speech to text), TTS(text to speech), Stable Diffusion 등
+
+Stable Diffusion이란? -> text to image 인공지능 모델. 소위 말하는 AI 그림생성
+-일종의 벡터 맞추기-> n차원의 keyword와 n차원의 image를 매칭 시켜나가는 과정?
+
