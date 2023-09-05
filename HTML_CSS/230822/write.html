@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,4 +48,55 @@
         </form>
     </main>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+    <link rel="stylesheet" href="write.css">
+</head>
+<body>
+    <main>
+        <h2 class="main-title">글쓰기</h2>
+        <p class="main-desc">내용을 입력해 주세요</p>
+        <form class="main-form" method="POST">
+            <div class="flex-cat">
+                <label for="user-cat">카테고리</label>
+                <select name="cat-select" id="cat-select">
+                    <option value="normal">일반</option>
+                    <option value="notice">공지사항</option>
+                </select>
+              </div>
+              <div class="flex-title">
+                <label for="user-title">제목</label>
+                <input id="user-title" type="text" />
+              </div>
+              <div class="flex-text">
+                <label for="user-text">내용</label>
+                <textarea
+                    id="user-text"
+                    rows="7"
+                    cols="50"
+                    minlength="10"
+                    maxlength="100"
+                    ></textarea>
+              </div>
+              <div class="flex-file">
+                <label for="user-file">파일첨부</label>
+                <input id="user-file" type="file" />
+              </div>
+              <div class="user-btn">
+                <a href="">목록</a>
+                <button class="init-btn" type="submit">초기화</button>
+                <button class="write-btn" type="submit">작성</button>
+                
+
+              </div>
+              
+        </form>
+    </main>
+</body>
+>>>>>>> babce9a (firstcommit)
 </html>

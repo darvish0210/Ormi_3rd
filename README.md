@@ -349,3 +349,6 @@ Stable Diffusion이란? -> text to image 인공지능 모델. 소위 말하는 A
 
 의 방식이었는데 document.getElementById 로 받아와서 display를 none으로 하는 방식을 처음에 생각하지 못해서 시간이 좀 걸렸던 것 같다.
 
+230905
+
+사용할 기본적인 스타일 추가
