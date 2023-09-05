@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 div{
@@ -21,4 +22,29 @@ label{
     display: flex;
     width: 1000px;
     height: 200px;
+=======
+
+
+div{
+    padding-bottom: 10px;
+}
+label{
+    background-color: lightgray;
+
+    width: 80px;
+    height: 50px;
+}
+
+.flex-title{
+    display: flex;
+    width: 1000px;
+    height: 30px;
+}
+.flex-text{
+    text-align: center;
+
+    display: flex;
+    width: 1000px;
+    height: 200px;
+>>>>>>> 9a90d68d7dd280c6eb2ddb8593ddd444feff7f3f
 }

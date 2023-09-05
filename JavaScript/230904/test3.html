@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,4 +46,51 @@
         
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    좋은 아침입니다. 기분이 어떠세요?<br>
+    <p id="Btnspace">
+        <button id="btn1">hello</button>
+        <button id="btn2">hello2</button>
+        <button id="btn3">hello3</button>
+    </p>
+    <p id = ></p>
+    <script>
+        const myBtn = document.querySelector('#btn1');
+        const myBtn2 = document.querySelector('#btn2');
+        const myBtn3 = document.querySelector('#btn3');
+
+        
+        myBtn.addEventListener('click',()=>{
+            const id  = '1'
+            
+            btnclose()
+        });
+        myBtn2.addEventListener('click',()=>{
+            console.log("2번클릭됨")
+            btnclose()
+        });
+        myBtn3.addEventListener('click',()=>{
+            console.log("3번클릭됨")
+            btnclose()
+        });
+        
+
+        function btnclose(){
+            
+            const btnspace = document.getElementById('Btnspace');
+            btnspace.style.display = 'none';
+        }
+        
+        
+    </script>
+</body>
+>>>>>>> 9a90d68d7dd280c6eb2ddb8593ddd444feff7f3f
 </html>
