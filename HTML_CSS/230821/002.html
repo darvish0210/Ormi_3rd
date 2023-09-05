@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex TEST</title>
+    <style>
+        .item{
+            width: 100px;
+            height:100px;
+            background-color: skyblue;
+        }
+        .item:nth-child(odd){
+            background-color: gold;
+        }
+        /* FLEX는 항상 컨테이너에 준다 
+        FLEX의 기본적인 주축은 행(가로)*/
+        .container{
+            height: 500px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-side, .center{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .right-side{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+        </div>
+        <div class="center">
+            <div class="item">item4</div>
+            <div class="item">item5</div>
+        </div>
+        <div class="right-side">
+            <div class="item">item6</div>
+            <div class="item">item7</div>
+            <div class="item">item8</div>
+        </div>
+    </div>
+</body>
+</html>
