@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,4 +44,53 @@
         
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    좋은 아침입니다. 오늘 기분이 어떠세요?<br>
+    <p id="Btnspace">
+        <button id="btn1">기분이 별로에요</button>
+        <button id="btn2">그저 그래요</button>
+        <button id="btn3">기분 좋아요</button>
+    </p>
+    <p id = "chatspace"></p>
+    <script>
+        const myBtn = document.querySelector('#btn1');
+        const myBtn2 = document.querySelector('#btn2');
+        const myBtn3 = document.querySelector('#btn3');
+
+        
+        myBtn.addEventListener('click',()=>{
+            
+            btnclose()
+        });
+        myBtn2.addEventListener('click',()=>{
+            
+
+            btnclose()
+        });
+        myBtn3.addEventListener('click',()=>{
+            
+            btnclose()
+        });
+        
+
+        function btnclose(){
+            
+            const btnspace = document.getElementById('Btnspace');
+            btnspace.style.display = 'none';
+            const chatspace = document.getElementById('chatspace');
+            chatspace.append('그럼 이런건 어떠세요?');
+        }
+        
+        
+    </script>
+</body>
+>>>>>>> babce9a (firstcommit)
 </html>

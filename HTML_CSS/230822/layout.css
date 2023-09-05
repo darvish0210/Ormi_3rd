@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     display: flex;
     flex-direction: column;
@@ -26,4 +27,34 @@ body{
 }
 main{
     flex-grow: 1;
+=======
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.layout-header{
+    height: 80px;
+    padding: 0 20px;
+    border-bottom: 1px solid #9b9898;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.layout-header div{
+    display: flex;
+    gap: 40px;
+}
+.layout-footer{
+    text-align: center;
+    background-color: #eee;
+    padding: 30px 0;
+
+}
+main{
+    flex-grow: 1;
+>>>>>>> babce9a (firstcommit)
 }
