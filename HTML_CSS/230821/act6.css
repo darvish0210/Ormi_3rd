@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 header{
     
     text-align: center;
@@ -32,5 +33,27 @@ ul{
     display: flex;
     gap:10px;
     flex-wrap: wrap;
+>>>>>>> 9d22ddcacca86d0d5872f6bf9bc92ef19dc977c3
+=======
+header{
+    
+    text-align: center;
+
+}
+section{
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    /* display: flex; */
+    /* gap: 30px; */
+}
+ul{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+<<<<<<< HEAD
 >>>>>>> babce9a (firstcommit)
+=======
+>>>>>>> 9a90d68d7dd280c6eb2ddb8593ddd444feff7f3f
+>>>>>>> 9d22ddcacca86d0d5872f6bf9bc92ef19dc977c3
 }

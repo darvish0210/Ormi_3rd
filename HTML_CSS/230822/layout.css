@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 body{
     display: flex;
     flex-direction: column;
@@ -56,5 +57,39 @@ body{
 }
 main{
     flex-grow: 1;
+>>>>>>> 9d22ddcacca86d0d5872f6bf9bc92ef19dc977c3
+=======
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.layout-header{
+    height: 80px;
+    padding: 0 20px;
+    border-bottom: 1px solid #9b9898;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.layout-header div{
+    display: flex;
+    gap: 40px;
+}
+.layout-footer{
+    text-align: center;
+    background-color: #eee;
+    padding: 30px 0;
+
+}
+main{
+    flex-grow: 1;
+<<<<<<< HEAD
 >>>>>>> babce9a (firstcommit)
+=======
+>>>>>>> 9a90d68d7dd280c6eb2ddb8593ddd444feff7f3f
+>>>>>>> 9d22ddcacca86d0d5872f6bf9bc92ef19dc977c3
 }
