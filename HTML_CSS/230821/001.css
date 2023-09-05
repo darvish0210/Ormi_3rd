@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 header{
     background-color: skyblue;
     height:50px;
@@ -48,4 +49,34 @@ footer{
 }
 
 
+>>>>>>> 9d22ddcacca86d0d5872f6bf9bc92ef19dc977c3
+=======
+header{
+    background-color: skyblue;
+    height:50px;
+}
+section{
+    background-color: slateblue;
+    width:70%;
+    height:200px;
+    float:left;
+}
+aside{
+    background-color: lime;
+    height: 200px;
+    width:30%;
+    float: right;
+
+}
+footer{
+    background-color: salmon;
+    height: 50px;
+    clear: both;
+}
+
+
+<<<<<<< HEAD
 >>>>>>> babce9a (firstcommit)
+=======
+>>>>>>> 9a90d68d7dd280c6eb2ddb8593ddd444feff7f3f
+>>>>>>> 9d22ddcacca86d0d5872f6bf9bc92ef19dc977c3
