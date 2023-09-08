@@ -389,3 +389,8 @@ python 강의 시작
 문자열 메소드는 기억해두면 좋다, 알고리즘 문제에서도 많이 쓰인다 zfill등
 
 알고리즘 문제를 풀땐 입출력을 먼저 보면 좋다
+
+수업시간에 연습문제로 카카오 코딩테스트를 부분적으로 풀어봄
+https://school.programmers.co.kr/learn/courses/30/lessons/17681?language=python3
+https://school.programmers.co.kr/learn/courses/30/lessons/72410
+
