@@ -362,3 +362,48 @@ Stable Diffusion이란? -> text to image 인공지능 모델. 소위 말하는 A
 ### 230905
 
 사용할 기본적인 스타일 추가
+<<<<<<< HEAD
+=======
+
+230906
+
+프로젝트 완성 및 README 작성
+
+230907 
+
+프로젝트 발표 및 리뷰 
+
+
+230908
+
+python 강의 시작
+
+장점
+1. Python-Django 는 Java-Spring에 비해 빠르게 MVP까지 올릴 수 있다.
+2. 속도
+3. 부하분산
+4. 스케일업 - 요기요 Django
+
+입출력, 변수, 자료형(정수,실수,문자열)
+
+중점사항
+함수의 주석은 보통 함수 선언문 내부에 단다.
+
+변수는 포스트잇이다! 다른 언어와 다르다.
+변수 표기법은 보통 스네이크식. (ex: col_num, row_num)
+
+새로운 자료형을 만났을 땐 print(type(x))와 print(dir(x))를 해보자
+
+실수 자료형엔 무한대? 가 있다. float('inf')
+
+복소수에서 보통 쓰는 i는 여기선 j를 쓴다. 3+4j
+
+문자열 메소드는 기억해두면 좋다, 알고리즘 문제에서도 많이 쓰인다 zfill등
+
+알고리즘 문제를 풀땐 입출력을 먼저 보면 좋다
+
+수업시간에 연습문제로 카카오 코딩테스트를 부분적으로 풀어봄
+https://school.programmers.co.kr/learn/courses/30/lessons/17681?language=python3
+https://school.programmers.co.kr/learn/courses/30/lessons/72410
+
+>>>>>>> 7867baf (ipynb 업로드)
