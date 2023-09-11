@@ -1,18 +1,19 @@
 # Ormi_3rd
-오르미 3기 폴더
 
-230816
+-오르미 3기 학습 내용
+
+## 230816
 
 VSC 설치, extension 환경설정 및 html 기초에 대해 학습
 
-230817
+## 230817
 
-html 기본 강의 
+### html 기본 강의
 - 블록과 인라인 요소 : 한줄 차지+줄바꿈, 일정 공간만 차지
 - 다양한 태그들 : div,span, header, article, section, h1,a,p, br, hr... etc
 - 양식(form) : label, button, input, fieldset ... etc
 
-연습문제
+### 연습문제
 
 act1 : 게시판 글조회 페이지 만들어 보기
 - footer, ul, ol 태그 사용
@@ -23,20 +24,20 @@ act2 : 로그인 페이지 만들어 보기
 act3 : 회원가입 양식 페이지 만들어 보기
 - fieldset, radio, checkbox 태그 사용
 
-230818
+## 230818
 
-html 기본 강의
+### html 기본 강의
 - 양식(form) : select , option , fieldset, textarea
 - 표(table) : tr, th, td
 
-css 기본 강의
+### css 기본 강의
 - css의 정의 : cascade style sheet
 - css 적용방법, 상속
 - css 선택자, 선택자 우선순위
 - css display 속성 : 블록, 인라인 요소는 그대로 시각적으로만 변화
 - css 단위, box model
 
-연습문제
+### 연습문제
 
 act4 : 게시판 글목록 페이지 만들어보기
 - table, tr, th, td 태그 사용
@@ -45,16 +46,18 @@ CSS 선택자 관련 문제풀이
 - 외부 웹사이트(CSS DINER https://flukeout.github.io/) , CSS SPEEDRUN (https://css-speedrun.netlify.app/)
 
 
-230819
+## 230819
+
+### 연습문제
 
 act5: 주말과제 - 로그인 페이지 (act2) 에 CSS입히기 
 - margin과 padding 등의 수치를 바꿔가며 가운데로 위치시키려 했지만, 창 크기를 바꾸면 위치가 바뀌어 의미가 없었다.
 - 가운데 정렬은 가장 큰 tag에서 'margin:auto'로 하는 편이 가장 편하고 세부적인 위치 조정은 각각 tag에서 조정 해주는 것이 최고다.
 
 
-230821
+## 230821
 
-css 기본 강의
+### css 기본 강의
 - float: block 요소가 아닌 것에 float를 주면 block이 된다. 해제는 clear로.
 - flex : 'display:flex' 로 시작한다. 컨테이너에 선언하고 안에 내부의 item들의 배치를 조정하는 방식.
 
@@ -69,18 +72,18 @@ act6 회원가입 페이지(act3)에 css 입히기 : 시간초과
 
  왜 시간초과 했는가? 
 
---1)fieldset에 flex가 먹히지 않아서 헤멨다. -> fieldset 태그를 빼버리고 section으로 전환 후 flex 먹이기 시도
+- 1.fieldset에 flex가 먹히지 않아서 헤멨다. -> fieldset 태그를 빼버리고 section으로 전환 후 flex 먹이기 시도
+-- 이런 경우엔 flaot를 쓰거나, fieldset 태그를 바꿔야 하는 것이 맞다
 
---2) ul에 flex를 먹이니 까만점?이 남아있었다. -> 이를 없애기 위해 ul과 li 태그도 빼버리고 flex 먹이기 시도
-
----1) 이런 경우엔 flaot를 쓰거나, fieldset 태그를 바꿔야 하는 것이 맞다
-
----2) list-style: none;을 입히면 까만점이 사라진다. 의외로 간단.
+- 2. ul에 flex를 먹이니 까만점?이 남아있었다. -> 이를 없애기 위해 ul과 li 태그도 빼버리고 flex 먹이기 시도
+-- list-style: none;을 입히면 까만점이 사라진다. 의외로 간단.
 
 생각보단 사소한 곳에서 시간을 잡아먹어 고민하느라 오래걸렸다.
 
 
-230822
+## 230822
+
+### CSS 강의
 
 글목록(act4) css 입히기, 게시판 글 작성 html+css 만들기, layout 만들기, chat 만들기 실습
 아쉽지만 간단한 layout을 빼고는 시간내에 잘 만들지 못했다. (강사님의 완성본은 board 폴더)
@@ -90,15 +93,13 @@ act6 회원가입 페이지(act3)에 css 입히기 : 시간초과
 
 
 
-230823
+## 230823
 
-JavaScript 기초 강의 
+### JavaScript 기초 강의
 
 JavaScript는 웹페이지에서 '동작하는 프로그램'을 만들 때 사용
 
 HTML과 연결은 body 태그 밑에<script src = ""> 형태로 연결 확장자는 .js
-
-
 
 변수는 var, let, const로 선언한다.
 
@@ -110,10 +111,10 @@ const는 init 필수. 값 변경 불가(상수 취급)
 
 원시 타입
 
--타 언어처럼 자료형 선언 하지 않음(ex. 자바의 int a = 10;) 
+-타 언어처럼 자료형 선언 하지 않음(ex. 자바의 int a = 10;)
 이 성질 때문에 타 언어에선 볼 수 없는 이상한 모습들이 나올 수 있다. (91-"1" = 90????)
 
-1.문자열 
+1.문자열
 따옴표로 선언. var a = '문자입니다.'
 일종의 배열처럼 취급하여 그 성질이 그대로 있다.(불변성, 인덱스등의 메소드 등)
 
@@ -134,9 +135,9 @@ undefined와 null의 차이는? 값의 '초기화'만을 목적으로 한다면 
 
 
 
-230824
+## 230824
 
-JavaScript 기초 강의 
+### JavaScript 기초 강의
 
 함수는 fuction으로 선언하며, parameter(매개변수)를 받아 내부의 기능을 수행 후, return(반환값)을 반환해준다.
 간단하게는 화살표 선언이나, 즉시실행식으로도 만들 수 있다.
@@ -181,13 +182,14 @@ filter(x) : x를 만족하는 요소만 추출해서 새 배열을 return
 reduce() : arr의 각 요소에 f를 실행하고, 그 결과가 누적된 하나의 값을 return
 
 예시
+```jsx
 const arrrr = [1,2,3,4,5]
 function reducer(x,y){
     return (x+y)
 }
 const resulttt = arrrr.reduce(reducer);
 console.log(resulttt) // 총합구하기
-
+```
 
 includes(x) : x가 포함되면 true, 아니면 false
 join(s) : 각 요소를 's' 로 연결 시켜주는 용 
@@ -207,7 +209,10 @@ const babaYaga = {
 };
 ```
 
-230825
+## 230825
+
+
+### JavaScript 기초 강의
 
 조건문 (if-else, switch)
 
@@ -272,9 +277,9 @@ DOM 은 HTML 문서의 내용을 트리형태로 구조화하여 웹페이지와
 
 
 
-230828
+## 230828
 
-회고 시간 + JS 마지막시간
+### 회고 시간 + JS 마지막시간
 
 promise - '콜백지옥' 을 탈출하는데 도와준다.
 ```jsx
@@ -318,7 +323,7 @@ f();
 
 ```
 
-230829 ~ 230906
+## 230829 ~ 230906
 
 필수과제 ChatGPT 연동 개인 프로젝트 (230906 까지)
 - 주제: ChatGPT 를 이용한 자율주제 (API제공됨)
@@ -328,7 +333,7 @@ f();
 
 
 
-230901 
+### 230901
 
 기술특강 딥러닝 with 이스트소프트 권택순 CTO님
 
@@ -339,7 +344,7 @@ f();
 Stable Diffusion이란? -> text to image 인공지능 모델. 소위 말하는 AI 그림생성
 -일종의 벡터 맞추기-> n차원의 keyword와 n차원의 image를 매칭 시켜나가는 과정?
 
-230904
+### 230904
 
 버튼을 없애는 방법? 에 대해서 생각하느라 조금 시간이 오래 걸렸다.
 
@@ -349,22 +354,22 @@ Stable Diffusion이란? -> text to image 인공지능 모델. 소위 말하는 A
 
 의 방식이었는데 document.getElementById 로 받아와서 display를 none으로 하는 방식을 처음에 생각하지 못해서 시간이 좀 걸렸던 것 같다.
 
-230905
+### 230905
 
 사용할 기본적인 스타일 추가
 
-230906
+### 230906
 
 프로젝트 완성 및 README 작성
 
-230907 
+### 230907
 
-프로젝트 발표 및 리뷰 
+프로젝트 발표 및 리뷰
 
 
-230908
+## 230908
 
-python 강의 시작
+### python 기초 강의
 
 장점
 1. Python-Django 는 Java-Spring에 비해 빠르게 MVP까지 올릴 수 있다.
@@ -393,4 +398,35 @@ python 강의 시작
 수업시간에 연습문제로 카카오 코딩테스트를 부분적으로 풀어봄
 https://school.programmers.co.kr/learn/courses/30/lessons/17681?language=python3
 https://school.programmers.co.kr/learn/courses/30/lessons/72410
+
+
+
+## 230911
+
+
+### python 기초 강의
+
+논리자료형
+
+True, False, None이 있으며 True는 1, False는 0과 같이 취급된다.
+
+None을 확인할때는 == 보다는 is 로 확인하는것이 좋다.
+is 는 id값을 기준으로 판단한다.
+
+메소드 체이닝 
+
+STR.Foo().Foo2().Foo3() 식으로 이어나가기
+
+형변환
+
+float에서 str은 되지만, 그것을 바로 int로 할 수는 없다('.' 때문)
+
+연산과 구문
+
+'-'가 여러개 붙어도 연산이 된다? '--' 는 '+' 취급?
+python에서 '//' 는 몫이 아니다! '나눈 수의 내림' 이다. (음수연산에서 확인가능)
+
+단락회로평가
+
+A or B 혹은 A and B 일때, A만으로 True, 혹은 False의 판별이 날 경우 A 뒤로는 쳐다도 보지 않는다.
 
