@@ -219,7 +219,7 @@ const babaYaga = {
 
 ### JavaScript 기초 강의
 
-조건문 (if-else, switch)
+#### 조건문 (if-else, switch)
 
 삼항 연산자 : if-else를 간단하게 표현하는 방식
 ```jsx
