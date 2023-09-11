@@ -139,9 +139,12 @@ undefined와 null의 차이는? 값의 '초기화'만을 목적으로 한다면 
 ## 230824
 
 ### JavaScript 기초 강의
+<<<<<<< HEAD
 
 
 #### 함수
+=======
+>>>>>>> 7c0c89e (230911 ipynb upload AND README REWRITE)
 
 함수는 fuction으로 선언하며, parameter(매개변수)를 받아 내부의 기능을 수행 후, return(반환값)을 반환해준다.
 간단하게는 화살표 선언이나, 즉시실행식으로도 만들 수 있다.
@@ -215,6 +218,12 @@ const babaYaga = {
 ```
 
 ## 230825
+<<<<<<< HEAD
+=======
+
+
+### JavaScript 기초 강의
+>>>>>>> 7c0c89e (230911 ipynb upload AND README REWRITE)
 
 
 ### JavaScript 기초 강의
@@ -365,18 +374,18 @@ Stable Diffusion이란? -> text to image 인공지능 모델. 소위 말하는 A
 <<<<<<< HEAD
 =======
 
-230906
+### 230906
 
 프로젝트 완성 및 README 작성
 
-230907 
+### 230907
 
-프로젝트 발표 및 리뷰 
+프로젝트 발표 및 리뷰
 
 
-230908
+## 230908
 
-python 강의 시작
+### python 기초 강의
 
 장점
 1. Python-Django 는 Java-Spring에 비해 빠르게 MVP까지 올릴 수 있다.
@@ -406,4 +415,38 @@ python 강의 시작
 https://school.programmers.co.kr/learn/courses/30/lessons/17681?language=python3
 https://school.programmers.co.kr/learn/courses/30/lessons/72410
 
+<<<<<<< HEAD
 >>>>>>> 7867baf (ipynb 업로드)
+=======
+
+
+## 230911
+
+
+### python 기초 강의
+
+논리자료형
+
+True, False, None이 있으며 True는 1, False는 0과 같이 취급된다.
+
+None을 확인할때는 == 보다는 is 로 확인하는것이 좋다.
+is 는 id값을 기준으로 판단한다.
+
+메소드 체이닝 
+
+STR.Foo().Foo2().Foo3() 식으로 이어나가기
+
+형변환
+
+float에서 str은 되지만, 그것을 바로 int로 할 수는 없다('.' 때문)
+
+연산과 구문
+
+'-'가 여러개 붙어도 연산이 된다? '--' 는 '+' 취급?
+python에서 '//' 는 몫이 아니다! '나눈 수의 내림' 이다. (음수연산에서 확인가능)
+
+단락회로평가
+
+A or B 혹은 A and B 일때, A만으로 True, 혹은 False의 판별이 날 경우 A 뒤로는 쳐다도 보지 않는다.
+
+>>>>>>> 7c0c89e (230911 ipynb upload AND README REWRITE)
