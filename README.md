@@ -146,6 +146,9 @@ undefined와 null의 차이는? 값의 '초기화'만을 목적으로 한다면 
 =======
 >>>>>>> 7c0c89e (230911 ipynb upload AND README REWRITE)
 
+
+#### 함수
+
 함수는 fuction으로 선언하며, parameter(매개변수)를 받아 내부의 기능을 수행 후, return(반환값)을 반환해준다.
 간단하게는 화살표 선언이나, 즉시실행식으로도 만들 수 있다.
 
