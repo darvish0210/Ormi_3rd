@@ -65,3 +65,49 @@ python에서 '//' 는 몫이 아니다! '나눈 수의 내림' 이다. (음수�
 
 A or B 혹은 A and B 일때, A만으로 True, 혹은 False의 판별이 날 경우 A 뒤로는 쳐다도 보지 않는다.
 
+## 230912
+
+### python 기초 강의
+
+#### 함수
+
+기본값을 주려 할땐 없는 것을 앞에 두기
+```python
+
+def f(a=10, b=20, c): # c만 default value를 안주게 되면 error, 순서대로 안주어야 합니다.
+    print(a, b, c)
+
+# f() # error
+# f(100, 10) # error
+# f(a=100, b=200, c=300) # error
+# f(c=300, a=100, b=200) # error
+# f(c=300) # error
+
+def f(a=10, b=20, c): # 이 코드는 가능하지 않습니다.
+    print(a, b, c)
+
+def f(a, b=20, c=30): # 이 코드는 가능합니다.
+    print(a, b, c)
+
+```
+함수도 변수처럼 취급하기
+
+```python
+# a와 b를 더한 값과 a와 b를 뺀 값을 곱하는 함수 만들기
+
+a,b = 2,3
+#maybe....
+def mul(a=0,b=0):
+    return a*b
+def sum(a=0,b=0):
+    return a+b
+def subs(a=0,b=0):
+    return a-b
+
+mul(sum(a,b),subs(a,b))
+```
+
+어지간하면 재귀함수 보다는 반복문을 쓰자. 무한 반복위험
+
+람다 스타일은 재사용안할 것? 에는 편하게 한번쓰고 마는 느낌
+
