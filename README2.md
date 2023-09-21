@@ -269,3 +269,55 @@ iter 와 next 메소드가 정의되어야 한다
 
 제네레이터: 이터레이터를 생성해주는 함수
 yield 키워드를 쓴다.
+
+
+
+## 230921
+
+### python 기초강의
+
+#### f-string 방식(3.6버전부터)
+
+```python
+something = '볼펜'
+EA = 2
+one_length = 5.343
+scale = 'cm'
+
+print(f'{something} {EA}개의 길이는 {one_length*EA}{scale} 입니다.')
+```
+
+```python
+# 중괄호가 2개씩 증가할 때마다 출력은 1개씩 증가
+value = 'hello'
+print(f'{value}') # 중괄호 X
+print(f'{{value}}') # 중괄호 1
+print(f'{{{value}}}') # 중괄호 1
+print(f'{{{{value}}}}') # 중괄호 2
+print(f'{{{{{value}}}}}') # 중괄호 2
+print(f'{{{{{{value}}}}}}') # 중괄호 3
+
+```
+3개라고 반올림해서 2개? 가 되지는 않음
+
+
+
+
+
+#### 파일 다루기
+
+```python
+f = open('python.csv', 'w')
+s = '''제목,평점,이미지,줄거리
+무빙,5.0,img,줄거리
+무빙,5.0,img,줄거리
+무빙,5.0,img,줄거리
+'''
+f.write(s)
+f.close()
+```
+w 쓰기, r 읽기, a 추가(append) = 수정이 가능한게 아니라 말 그대로 추가만 가능
+
+
+
+
