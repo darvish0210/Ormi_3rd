@@ -321,3 +321,55 @@ w 쓰기, r 읽기, a 추가(append) = 수정이 가능한게 아니라 말 그�
 
 
 
+
+## 230921
+
+### python 기초강의
+
+
+#### 정규표현식
+
+
+대소문자를 구분함
+^hello는 처음에 나오는 hello
+hello$는 마지막에 나오는 hello
+h.llo는 .자리가 any character
+
+ _* : 앞에 있는 문자가 0개 ~ N개
+ _+ : 앞에 있는 문자가 1개 ~ N개
+ _? : 앞에 있는 문자가 0개 ~ 1개
+
+/\w/gm : 워드
+/\w{5} /gm : 5개의 글자와 스페이스 하나
+/\W/gm : not 워드
+/\d/gm : 숫자
+/\D/gm : not 숫자
+/\s/gm : 스페이스
+/\S/gm : not 스페이스
+
+
+
+#### 크롤링
+
+##### 크롤링은 늘 조심할것! 비영리적이어도 불법의 여지 있음!
+
+http 포트 80
+https 포트 443 (http + security)
+
+
+연습용 사이트 크롤링
+```python
+import requests
+from bs4 import BeautifulSoup
+
+response = requests.get('http://www.paullab.co.kr/stock.html')
+
+response.encoding = 'utf-8'
+html = response.text
+
+soup = BeautifulSoup(html, 'html.parser')
+
+#2019.10.23 거래량 출력하기
+
+soup.select('.table>tbody>tr')[1].select('td')[6].text
+```
