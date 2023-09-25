@@ -322,7 +322,7 @@ w 쓰기, r 읽기, a 추가(append) = 수정이 가능한게 아니라 말 그�
 
 
 
-## 230921
+## 230922
 
 ### python 기초강의
 
@@ -373,3 +373,27 @@ soup = BeautifulSoup(html, 'html.parser')
 
 soup.select('.table>tbody>tr')[1].select('td')[6].text
 ```
+
+
+
+
+
+## 230922
+
+### python 기초강의
+
+오전 회고
+
+
+#### 자료구조 - 스택
+
+스택은 나중에 들어온 data가 먼저 나간다
+
+LIFO Last in First out 후입선출
+
+
+
+
+연습문제 https://pyalgo.co.kr/?page=6#
+
+231004 오전 파이썬 시험예정 - 2시간, 50점 만점, 총 15문제
