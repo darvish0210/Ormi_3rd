@@ -447,3 +447,12 @@ Node에는 data와 다음 Node를 가리키는 next만 존재
 FIFO : 순서대로 교체
 LRU : Hit가 가장 오랫동안 맞지 않은 것 먼저 교체
 
+
+
+
+## 231002
+
+### python 문제풀이 복습
+
+https://pyalgo.co.kr/?page=2 암호문 - 정규표현식 사용
+https://pyalgo.co.kr/?page=3 인원선발 - 정렬
