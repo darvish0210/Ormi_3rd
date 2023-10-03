@@ -456,3 +456,10 @@ LRU : Hit가 가장 오랫동안 맞지 않은 것 먼저 교체
 
 https://pyalgo.co.kr/?page=2 암호문 - 정규표현식 사용
 https://pyalgo.co.kr/?page=3 인원선발 - 정렬
+
+## 231003
+
+### python 문제풀이 복습
+
+https://pyalgo.co.kr/?page=4 꿈의설계 - 정규표현식 사용
+그런데 어째서인지 통과가 안된다? 질문해봐야할거같음 (에러a)만 표시됨
