@@ -463,3 +463,23 @@ https://pyalgo.co.kr/?page=3 인원선발 - 정렬
 
 https://pyalgo.co.kr/?page=4 꿈의설계 - 정규표현식 사용
 그런데 어째서인지 통과가 안된다? 질문해봐야할거같음 (에러a)만 표시됨
+
+
+## 231004
+
+### python test
+외부유출 금지! 
+
+### Django
+Django의 장점은?
+배포가 쉽다!
+단점은 아마도 속도?
+
+MVT 패턴 = Model Template View
+Model : 데이터베이스와 상호작용
+Template: 사용자에게 보여지는 HTML,CSS,JS등
+View: HTTP 요청 처리 및 모델과 템플릿 연결
+
+Django는 가상환경에서 실행하자. -> 라이브러리 버전 관리등의 이점.
+
+가상환경 생성 및 프로젝트 생성 연습
