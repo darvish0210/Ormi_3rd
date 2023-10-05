@@ -483,3 +483,112 @@ View: HTTP 요청 처리 및 모델과 템플릿 연결
 Django는 가상환경에서 실행하자. -> 라이브러리 버전 관리등의 이점.
 
 가상환경 생성 및 프로젝트 생성 연습
+
+
+
+## 231004
+
+### Django
+
+```
+# urls 기획
+1. (어제 과제) 다음 url이 작동하도록 해주세요.
+1.1 ''
+1.2 'about/'
+1.3 'contact/'
+1.4 'accounts/login'
+1.5 'accounts/logout'
+1.6 'blog/'
+1.7 'blog/1'
+1.8 'blog/2'
+1.9 'blog/3'
+
+
+앱이름: main	views 함수이름	html 파일이름	비고
+''		index		index.html
+'about/'		about
+'contact/'		contact
+
+앱이름: accounts	views 함수이름	html 파일이름	비고
+'accounts/'	404
+'accounts/login'	login		login.html
+'accounts/logout'	logout		logout.html
+'accounts/<str:s>'	404				login, logout을 제외하고 404로
+
+앱이름: blog	views 함수이름	html 파일이름	비고
+'blog/'		blog		blog.html
+'blog/<int:pk>'	post		post.html		게시물이 없을 경우에는 404로 연결
+```
+
+```python
+# main > urls.py
+from django.urls import path
+from . import views
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+]
+
+# blog > urls.py
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.blog, name='blog'),  # 실제로는 blog/
+    path('<int:pk>/', views.post, name='post'), # 실제로는 blog/1, blog/2, blog/3...
+]
+# accounts > urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('login/', views.login, name='login'), # accounts/login
+    path('logout/', views.logout, name='logout'), # accounts/logout
+]
+
+#blog > views.py
+
+from django.shortcuts import render
+
+def blog(request):
+    # db = Cafe.objects.all()를 하면 아래와 같이 값을 가져오게 됩니다.
+    db = {
+        1: {
+            'title': '제목 1', 
+            'contents': 'Post 1 body', 
+            'img': 'https://picsum.photos/200/300'
+            },
+        2: {
+            'title': '제목 2', 
+            'contents': 'Post 2 body', 
+            'img': 'https://picsum.photos/200/300'
+            },
+        3: {
+            'title': '제목 3', 
+            'contents': 'Post 3 body', 
+            'img': 'https://picsum.photos/200/300'
+            },
+    }
+    return render(request, 'blog/blog.html', {'db': db})
+
+def post(request, pk):
+    # db = Cafe.objects.get(pk=pk)
+    return render(request, 'blog/post.html')
+
+def bookinfo(request):
+    '''
+    교육용 크롤링 페이지입니다.
+    '''
+    return render(request, 'blog/bookinfo.html')
+```
+name으로 관리하는이유? name을 안쓸 시 혹시 도메인이 바뀌면 일일히 h태그가서 바꿔야 한다.
+
+
+템플릿
+
+변수 사용 ->중괄호 두개씀
+html 내에서 파이썬 문법 사용시 중괄호 한개와 퍼센트{%%}
+
+for문,if문 사용시엔 {% endfor %}{% endif %}로 마무리
