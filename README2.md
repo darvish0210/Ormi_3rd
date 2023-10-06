@@ -592,3 +592,44 @@ name으로 관리하는이유? name을 안쓸 시 혹시 도메인이 바뀌면 
 html 내에서 파이썬 문법 사용시 중괄호 한개와 퍼센트{%%}
 
 for문,if문 사용시엔 {% endfor %}{% endif %}로 마무리
+
+
+
+## 231005
+
+### git 기초강의
+
+https://paullabworkspace.notion.site/GitHub-435ec8074bcf4353afb947f601a030df
+
+- git 과 github의 차이는??
+
+git 은 분산버전 관리 시스템
+
+github는 git을 관리해주는 웹 서비스
+
+왜 git이 쓸까? - 버전관리에 굉장히 편리하다 = 형상 관리
+
+```
+파일의 상태에 따라 **Untracked 와 Tracked 로 분류
+
+1) **Untracked**(관리 대상이 아님) : 파일 생성 후 한번도 `git add`하지 않은 상태를 말합니다.
+
+2) **Tracked**(관리 대상임) : git이 관리하는 파일임을 의미합니다.
+
+- `Unmodified` : 최근의 커밋과 비교했을 때 바뀐 내용이 없는 상태
+- `Modified` : 최근 커밋과 비교했을 때 바뀐 내용이 있는 상태
+- `Staged` : 파일이 수정되고 나서 스테이지 공간에 올라와 있는 상태이며, `git add` 후의 상태
+```
+
+add : git이 관리할 대상으로 파일을 등록
+commit : Staged 된 상태를 등록
+push : 원격저장소로 업로드
+pull : 원격저장소의 이력을 받아옴
+
+
+etc)면접용 참고사이트
+https://github.com/JaeYeopHan/Interview_Question_for_Beginner
+https://github.com/gyoogle/tech-interview-for-developer
+https://github.com/ksundong/backend-interview-question#CS-%EA%B4%80%EB%A0%A8-%EC%A7%80%EC%8B%9D
+https://github.com/4z7l/tech_interview.zip
+
