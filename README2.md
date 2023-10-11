@@ -746,3 +746,32 @@ https://github.com/4z7l/tech_interview.zip
 </html>
 ```
 
+
+## 231011
+
+### Django
+
+가상환경 django 연습하기 - 이미지 삽입
+
+pillow : 이미지 관련 라이브러리
+
+```python
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    contents = models.TextField()
+    # main_image = models.ImageField(upload_to='blog/', blank=True, null=True) # upload_to='blog/' : blog 폴더 안에 저장
+    main_image = models.ImageField(blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
+```
+* blank=True는 '이 필드는 필수가 아니다'라는 내용입니다.
+* null=True는 '이 필드는 새로 생성되어도 DB 비어있어도 된다.'
+
+이미지는 그냥 넣으면 보이지 않는다?
+static 선언으로 경로지정을 해줘야함
+
+연습문제는 검색과 삭제가 들어간 버전
