@@ -775,3 +775,18 @@ class Post(models.Model):
 static 선언으로 경로지정을 해줘야함
 
 연습문제는 검색과 삭제가 들어간 버전
+
+## 231012
+
+### Django
+
+crud 연습
+
+CREATE,READ,UPDATE,DELETE
+
+{% csrf_token %} : Django의 기본적인 CSRF 방지 메커니즘은 CSRF 토큰을 쿠키(세션이 아니라)에 저장하는 방식
+브라우저의 기본적인 보안 정책에 따르면, JavaScript를 이용하여 다른 도메인의 쿠키를 설정하는 것은 불가능
+다른 프레임워크에서는 세션에 저장한다고 한다.
+
+- CSRF란? 
+권한을 가진 사용자가 의도와 무관하게 공격?을 하게 유도하는 해킹기법
