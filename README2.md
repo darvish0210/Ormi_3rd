@@ -790,3 +790,19 @@ CREATE,READ,UPDATE,DELETE
 
 - CSRF란? 
 권한을 가진 사용자가 의도와 무관하게 공격?을 하게 유도하는 해킹기법
+
+
+
+## 231012
+
+### 특강
+
+이스트소프트 테크센터장 변형진님
+
+주제 : 딥러닝 언어모델 이해와 활용
+
+RNN: Recurrent Neural Network = 순환 신경망
+
+Backpropagation : 역전파
+- 원하는 target과 output의 차이를 구한 뒤, 그 오차값을 뒤로 전파해가면서 변수들을 갱신
+
