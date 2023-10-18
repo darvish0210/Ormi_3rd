@@ -922,3 +922,21 @@ https://www.notion.so/Model-RDB-ERD-1-N-N-M-1-1-f34426c3b50c49c1adcda1a652dfa2c1
 
 RDB : relational DB
 ERD : Entity Relation Diagram
+
+
+## 231018
+
+### Django
+
+admin 사이트 커스터마이징
+
+모놀리식 : 템플릿 문법 써서 사용자에게 html,css,js코드를 주는 방법
+API 명세표가 따로 필요 없다. 렌더링은 Server에서 다 함.
+
+- 장점 : 규모가 있지 않은 서비스의 경우 빠른 개발 가능, 소규모 팀인 경우 선택하기 좋다.
+- 단점 : 규모가 커질 경우 BE, FE에 역할이 혼재됨.
+
+
+마이크로식(django서버, fe서버가 별도로 운영)
+ - 장점 : 서버엔지니어와 프론트엔드 개발자는 API 명세서로 소통하면 됨.
+ - 단점 : 소규모 프로젝트에서는 비용이 Too much.
