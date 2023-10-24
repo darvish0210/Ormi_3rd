@@ -988,3 +988,20 @@ DB관련 설정은 settings.py 에서 가능
 
 데이터덤프: DB의 데이터 추출
 데이터로드: 데이터를 읽고 DB에 저장
+
+## 231023
+
+### DB
+
+SQL 쿼리 실습 https://sqlschool.co.kr/
+
+inner join : 교집합
+
+
+outer join : 합집합 
+빈 값은 null
+
+left outer join - 왼쪽을 기준으로 합치기 : 왼쪽에 없으면 표시되지 않음
+right outer join - 오른쪽을 기준으로 합치기 : 오른쪽에 없으면 표시되지 않음
+
+full outer join - 모두 다 합치기
