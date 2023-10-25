@@ -1,0 +1,43 @@
+Table User {
+  id int [primary key]
+  nickname str
+  profile_img str
+  email str
+  password str
+}
+
+Table Post {
+  post_id int [primary key]
+  title str
+  picture list
+  content str
+  category str
+  viewcount int
+  likecount int
+  user_id int
+}
+
+Table Comment {
+  id int [primary key]
+  content str
+  likecount int
+  user_id int
+  post_id int
+
+}
+Table Likes{
+  post_id int
+  count int
+  comment_id int
+  comment_count int
+}
+
+Ref: "User"."id" < "Post"."user_id"
+
+Ref: "User"."id" < "Comment"."user_id"
+
+Ref: "Post"."post_id" < "Comment"."post_id"
+
+Ref: "Post"."post_id" < "Likes"."post_id"
+
+Ref: "Comment"."id" < "Likes"."comment_id"
