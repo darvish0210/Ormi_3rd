@@ -1092,3 +1092,17 @@ S3 - 스토리지 서비스
 
 
 EC2 생성과 MFA 설정 후 접속 확인까지 완료
+
+## 231114
+
+### AWS
+
+Lightsail 사용해봄
+
+sudo 는 super user do
+systemctl은 서비스 시작, 중지, 재시작등을 위한 명령
+
+PATH의 환경변수 값 확인은 echo $PATH
+
+어플 설치는 sudo apt install package-name
+
