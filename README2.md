@@ -1080,6 +1080,9 @@ STAR 기법
 
 오전 회고
 
+트랜잭션(transaction)이란 "쪼갤 수 없는 업무 처리의 최소 단위"
+MSA트랜잭션에선 어떻게 ? - 메세지 큐를 이용
+
 ### AWS 
 https://paullabworkspace.notion.site/AWS-2c7f7b69557247acbb0d862547fb71cc
 
@@ -1106,3 +1109,13 @@ PATH의 환경변수 값 확인은 echo $PATH
 
 어플 설치는 sudo apt install package-name
 
+## 231115
+
+### AWS
+
+ssh로 powershell에서 Lightsail 서버 접속
+oh-my-zsh 로 터미널 꾸미기
+zsh 테마 바꾸기
+zsh 플러그인 설치
+파일질라로 ftp 연결 
+vscode와 연결 - Remote 확장
