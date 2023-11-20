@@ -1155,3 +1155,37 @@ Postman사이트,Thunder Client 확장기능 으로 테스트 해보기
 
 JWT 연습과제 풀기 + 전 날 못했던 TTD 연습과제 풀기
 
+## 231117
+
+### Django DRF 
+
+https://paullabworkspace.notion.site/DRF-Mixin-Model-21169833e44f4d85b02ea96da28135e4#c759b8777c0547d28a45fc74845cb25f
+
+ipython 쉘 써보기 : modeltest - post,comment 생성
+
+viewset 실습
+
+rest_framework를 쓸거면, view set을 사용하는게 낫다
+
+https://paullabworkspace.notion.site/DRF-ec3342c25b4149179561367a85dc5ec9
+- viewset의 종류
+    - viewsets.ReadOnlyModelViewSet(list, detail)
+    - viewsets.ModelViewSet(list, create, detail, update, delete)
+
+
+
+연습문제 :drftest
+
+일반 게시판	/notice : 회원이 아닌 사람도 R 가능, 회원인 사람만 C
+일반 게시판 상세보기	/notice/int:post_pk: 회원이 아닌 사람도 R 가능, 작성자만 UD 가능
+게시글 목록	/blog : 회원인 사람만 R, C 가능
+게시글 상세보기	/blog/int:post_pk: 회원인 사람만 R, 작성자만 UD 가능
+
+
+커스텀 유저를 설정할거면, 초반에 migrate하기 전에 설정하자
+
+프로젝트
+- 프로젝트 일정: **11월 21일(화) ~ 11월 30일(목)**
+- **12월 1일 개별 발표**(개인당 10분)
+- 라이트세일 2개 띄우기?
+코드 짜는 것은 28일까지로 권장
