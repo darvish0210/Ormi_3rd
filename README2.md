@@ -1216,3 +1216,18 @@ AI 면접은 '처음 자기소개' 에서 부터 얼마나 어조? 등이 변화
 
 주변인으로 둘러서 질문해도, 사실은 회사에서 어떻게? 를 묻는 경우가 많다.
 
+## 231206
+
+### github 중급
+
+개인 명의의 리포 보다 organization을 쓰는게 팀 작업에 더 좋다
+
+brach는 별도의 작업공간. pull request 보다 branch가 팀로젝트에선 더 좋을지도
+
+    * git init 또는 git clone - 변경점 생성, 혹은 복제
+    * git pull: 소스 코드 받아오는 것
+    * 소스코드 수정
+    * git add: 내 소스코드 추가
+    * git commit: 버전 생성
+    * git push: GitHub에 추가
+
