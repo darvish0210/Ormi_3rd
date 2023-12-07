@@ -1231,3 +1231,9 @@ brach는 별도의 작업공간. pull request 보다 branch가 팀로젝트에�
     * git commit: 버전 생성
     * git push: GitHub에 추가
 
+## 231207 
+
+### DRF 실습
+
+https://github.com/weniv/drf_wenivgram_sample
+
