@@ -1237,3 +1237,10 @@ brach는 별도의 작업공간. pull request 보다 branch가 팀로젝트에�
 
 https://github.com/weniv/drf_wenivgram_sample
 
+## 231211
+
+### Lightsail로 배포 실습
+
+https://paullabworkspace.notion.site/DRF-CI-CD-023fe5a0441f48e0a73bde317ec0c0ad
+
+라이트세일에서 새로운 우분투 인스턴스 생성 후 구니콘과 연결
