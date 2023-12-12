@@ -1237,10 +1237,64 @@ brach는 별도의 작업공간. pull request 보다 branch가 팀로젝트에�
 
 https://github.com/weniv/drf_wenivgram_sample
 
-## 231211
+## 231211 ~ 231212
 
 ### Lightsail로 배포 실습
 
 https://paullabworkspace.notion.site/DRF-CI-CD-023fe5a0441f48e0a73bde317ec0c0ad
 
 라이트세일에서 새로운 우분투 인스턴스 생성 후 구니콘과 연결
+
+Github actions를 통한 CI/CD 구축
+
+CI/CD란? : 지속적 통합, 지속적 배포 Continuous integration, Continuous delivery
+
+actions로 일종의 매크로? 를 뿌리는 느낌
+
+```
+name: Django CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 체크아웃 레포지토리
+        uses: actions/checkout@v3
+
+      - name: 파이썬 설정
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.11'
+
+      - name: 의존성 설치
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: 서버 배포
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }} 
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          script: |
+						set -e
+            cd /home/ubuntu/{레포지토리주소}
+            git pull origin main
+
+            echo "SECRET_KEY=\"${{ secrets.SECRET_KEY }}\"" > .env
+            echo "DEBUG='${{ secrets.DEBUG }}'" >> .env
+
+            source venv/bin/activate
+            pip install -r requirements.txt
+            sudo systemctl restart {아까등록한서비스이름}.service
+```
+
+@v3 : 액션의 버전
+중요!: 경로지정을 명확히 해주어야 하며, ${{}} 안의 변수는 깃헙 자체에서 설정해주어야 한다.
